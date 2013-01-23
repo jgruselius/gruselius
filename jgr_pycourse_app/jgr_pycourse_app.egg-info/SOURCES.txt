@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+jgr_pycourse_app/__init__.py
+jgr_pycourse_app.egg-info/PKG-INFO
+jgr_pycourse_app.egg-info/SOURCES.txt
+jgr_pycourse_app.egg-info/dependency_links.txt
+jgr_pycourse_app.egg-info/entry_points.txt
+jgr_pycourse_app.egg-info/not-zip-safe
+jgr_pycourse_app.egg-info/top_level.txt

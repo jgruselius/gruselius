@@ -7,7 +7,8 @@ setup(
 	author_email='joel.gruselius@scilifelab.se',
 	url='',
 	packages=['gruselius',],
-	scripts=['getting_data',]
+	scripts=['scripts/getting_data.py',],
 	license='GPLv3',
 	long_description=open('README.txt').read(),
+	install_requires = ['untangle'],
 )

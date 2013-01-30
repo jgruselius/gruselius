@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+
 import sys
-from gruselius import getFractionOfOutagesBy
+from gruselius.session2 import getFractionOfOutagesBy
 
 def main(args):
 	xmlUrl = "http://www.grandcentral.org/developers/data/nyct/nyct_ene.xml"

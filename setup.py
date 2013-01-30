@@ -9,6 +9,6 @@ setup(
 	packages=['gruselius',],
 	scripts=['scripts/getting_data.py',],
 	license='GPLv3',
-	long_description=open('README.txt').read(),
+	long_description=open('README.md').read(),
 	install_requires = ['untangle'],
 )

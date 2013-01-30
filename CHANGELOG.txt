@@ -1,0 +1,47 @@
+commit 8db4280c276a2e490485926f3f28d71002b49a8a
+Author: Joel Gruselius <joel@mint>
+Date:   Wed Jan 30 21:42:06 2013 +0100
+
+    Completed assignment for session 3
+
+commit e3908b76c8895724d8d55461973617c09de37eec
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Wed Jan 30 12:13:36 2013 +0100
+
+    Should work now..
+
+commit 4ebb869a151c4ede98feb176530098233c4b4edf
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Sun Jan 27 21:27:11 2013 +0100
+
+    Separated code
+
+commit bc048c13a26509aa70f38e3c21a34d17bc17b296
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Sat Jan 26 10:56:02 2013 +0100
+
+    Started task 2
+
+commit debed397a0c7f149e8dba808cb68a23e240a6348
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Sat Jan 26 09:46:24 2013 +0100
+
+    Moved __init__.py
+
+commit 3f0a6770cce3ae43d531de734e4d20fbb02d8849
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Sat Jan 26 09:41:20 2013 +0100
+
+    Fixed directory structure
+
+commit cbd3859a5eb634308a5726367c81f11b45e099f0
+Author: Joel Gruselius <joel.gruselius@scilifelab.se>
+Date:   Wed Jan 23 14:57:15 2013 +0100
+
+    First commmit
+
+commit 9a056a0fd5ad4d11e3da33e71c3e9b960f9aec50
+Author: jgruselius <joel.gruselius@scilifelab.se>
+Date:   Wed Jan 16 06:04:58 2013 -0800
+
+    Initial commit

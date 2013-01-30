@@ -1,4 +1,0 @@
-gruselius
-=========
-
-For python course

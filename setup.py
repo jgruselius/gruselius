@@ -7,7 +7,7 @@ setup(
 	author_email='joel.gruselius@scilifelab.se',
 	url='',
 	packages=['gruselius',],
-	scripts=['scripts/getting_data.py',],
+	scripts=['scripts/getting_data.py','scripts/check_repo.py'],
 	license='GPLv3',
 	long_description=open('README.md').read(),
 	install_requires = ['untangle'],

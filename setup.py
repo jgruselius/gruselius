@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
 	name='gruselius',
@@ -6,7 +6,7 @@ setup(
 	author='Joel G',
 	author_email='joel.gruselius@scilifelab.se',
 	url='',
-	packages=['gruselius',],
+	packages=find_packages(),
 	scripts=['scripts/getting_data.py','scripts/check_repo.py'],
 	license='GPLv3',
 	long_description=open('README.md').read(),

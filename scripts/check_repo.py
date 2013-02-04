@@ -4,12 +4,18 @@ import os
 from gruselius.session3 import CourseRepo, TemporarilyChangeDir
 
 def main(args):
-	with TemporarilyChangeDir(args[0]):
-		cr = CourseRepo(os.path.basename(args[0]))
-		if cr.check():
-			print("PASS")
-		else:
-			print("FAIL")
+	if len(args) != 1:
+		help()
+	else:
+		with TemporarilyChangeDir(os.path.abspath(args[0])):
+			cr = CourseRepo("gruselius")
+			if cr.check():
+				print("PASS")
+			else:
+				print("FAIL")
+
+def help():
+	print("Usage:\n\tcheck_repo.py <path>\n")
 
 if __name__ == "__main__":
 	main(sys.argv[1:])

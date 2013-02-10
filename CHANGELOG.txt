@@ -1,3 +1,45 @@
+commit ea61ca3d638fe890c4963bfc6dc627f7a72707c0
+Author: Joel G <joel.gruselius@scilifelab.se>
+Date:   Sun Feb 10 14:47:13 2013 +0100
+
+    Session 3 solution fix
+
+commit ed7c99426d78290a90d70d879c671b0eec23a6b1
+Author: Joel G <joel.gruselius@scilifelab.se>
+Date:   Mon Feb 4 19:25:24 2013 +0100
+
+    Fixed argument handling
+
+commit 6a0989e3837021f059423e7302f453968ef29550
+Author: Joel G <joel.gruselius@scilifelab.se>
+Date:   Sun Feb 3 18:47:35 2013 +0100
+
+    Fixed setup.py
+
+commit 61c81ed8d612b50d30c4a02e2f5031aa1849f4ae
+Author: Joel Gruselius <joel@mint>
+Date:   Wed Jan 30 21:56:56 2013 +0100
+
+    Cleaned up
+
+commit 3b8a6b105f39e53fbd1c8ececb248e6e336001f1
+Author: Joel Gruselius <joel@mint>
+Date:   Wed Jan 30 21:53:10 2013 +0100
+
+    Removed temporary files
+
+commit c04345c08018b5529d81eb395ac00b78646390b8
+Author: Joel Gruselius <joel@mint>
+Date:   Wed Jan 30 21:51:24 2013 +0100
+
+    Added changelog
+
+commit 75adb81b9c5560e486389a39b8a75c85ce7f7647
+Author: Joel Gruselius <joel@mint>
+Date:   Wed Jan 30 21:50:30 2013 +0100
+
+    Updated setup.py to include check_repo.py
+
 commit 8db4280c276a2e490485926f3f28d71002b49a8a
 Author: Joel Gruselius <joel@mint>
 Date:   Wed Jan 30 21:42:06 2013 +0100

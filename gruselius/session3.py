@@ -2,18 +2,23 @@
 import os
 
 class CourseRepo:
-	def __init__(self, surname):
-		self.surname = surname
+	def __init__(self, name):
+		self.lastname = name
+		self.updateRequired()
+
+	def updateRequired(self):
+		self.required = [".git", "setup.py", "README.md",
+			"scripts/getting_data.py", "scripts/check_repo.py",
+			self.lastname+"/__init__.py", self.lastname+"/session3.py"]
 
 	@property
-	def required(self):
-		return [".git",
-		"setup.py",
-		"README.md",
-		"scripts/getting_data.py",
-		"scripts/check_repo.py",
-		self.surname+"/__init__.py",
-		self.surname+"/session3.py"]
+	def surename(self):
+		return self.name
+
+	@surename.setter
+	def surename(self, name):
+		self.lastname = name
+		self.updateRequired()
 
 	def check(self):
 		status = [os.path.exists(file) for file in self.required]

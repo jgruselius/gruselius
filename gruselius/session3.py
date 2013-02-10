@@ -13,7 +13,7 @@ class CourseRepo:
 
 	@property
 	def surename(self):
-		return self.name
+		return self.lastname
 
 	@surename.setter
 	def surename(self, name):

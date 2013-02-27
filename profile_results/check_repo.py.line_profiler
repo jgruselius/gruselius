@@ -1,0 +1,23 @@
+Timer unit: 1e-06 s
+
+File: scripts/check_repo.py
+Function: main at line 6
+Total time: 0.00051 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def main(args):
+     8         1           10     10.0      2.0  	if len(args) != 1:
+     9                                           		help()
+    10         1           31     31.0      6.1  	elif not os.path.exists(args[0]):
+    11                                           		print("The path '{0}' does not exist".format(args[0]))
+    12                                           	else:
+    13         1          128    128.0     25.1  		path = os.path.abspath(args[0])
+    14         1           46     46.0      9.0  		with TemporarilyChangeDir(path):
+    15         1           13     13.0      2.5  			cr = CourseRepo(os.path.basename(path))
+    16         1          233    233.0     45.7  			if cr.check():
+    17         1           49     49.0      9.6  				print("PASS")
+    18                                           			else:
+    19                                           				print("FAIL")
+

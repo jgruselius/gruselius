@@ -1,0 +1,15 @@
+Timer unit: 1e-06 s
+
+File: scripts/getting_data.py
+Function: main at line 5
+Total time: 0.769158 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     5                                           @profile
+     6                                           def main(args):
+     7         1            7      7.0      0.0  	xmlUrl = "http://www.grandcentral.org/developers/data/nyct/nyct_ene.xml"
+     8         1            1      1.0      0.0  	reason = "REPAIR"
+     9         1       769080 769080.0    100.0  	fraction = getFractionOfOutagesBy(xmlUrl, reason)
+    10         1           70     70.0      0.0  	print("Fraction of outages with reason {0}: {1}".format(reason, fraction))
+

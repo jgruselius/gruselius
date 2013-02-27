@@ -1,5 +1,14 @@
 import argparse
 
+def method1():
+	pass
+
+def method2():
+	pass
+
+def method3():
+	pass
+
 def main(arg):
 	modes = {"s": method1, "i": method2, "i": method3}
 	if not arg in modes:

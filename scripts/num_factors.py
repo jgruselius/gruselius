@@ -1,16 +1,21 @@
+"""Python course session 7 assignment"""
+
 import argparse
 
-def method1():
+def function1():
+	"""Sequential non-parallel function"""
 	pass
 
-def method2():
+def function2():
+	"""Parallelized using multiprocessing"""
 	pass
 
-def method3():
+def function3():
+	"""Parallelized using iPython"""
 	pass
 
 def main(arg):
-	modes = {"s": method1, "i": method2, "i": method3}
+	modes = {"s": function1, "i": function2, "i": function3}
 	if not arg in modes:
 		raise NameError
 	else:

@@ -3,6 +3,7 @@ import argparse
 import os
 from gruselius.session3 import CourseRepo, TemporarilyChangeDir
 
+# Uncomment when running line_profiler or memory_profiler:
 #@profile
 def main(path):
 	if not os.path.exists(path):

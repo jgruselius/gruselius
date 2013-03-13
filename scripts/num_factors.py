@@ -5,7 +5,7 @@ import time
 import multiprocessing
 #import iPython.parallel
 
-RANGE = (2,50000)
+RANGE = (2,500000)
 
 def factorize(n):
 	if n < 2:
@@ -30,8 +30,9 @@ def factorize(n):
 def function1():
 	t0 = time.clock()
 	"""Sequential non-parallel function"""
+	"""
 	factor_count = {}
-	fco = {}
+	fco = {} # factor count occurances
 	for i in xrange(*RANGE):
 		count = len(set(factorize(i)))
 		factor_count[i] = count
@@ -39,29 +40,40 @@ def function1():
 			fco[count] += 1
 		else:
 			fco[count] = 1
-	""" 
-	factors = set([factor for i in xrange(RANGE) for factor in factorize(i)])
+	# return fco
 	"""
-	print("{}".format(time.clock()-t0))
-	return fco
+	# Build a collection of all unique factors:
+	# Method 1, building a set (8.9 s):
+	# unique_factors = set()
+	# for i in xrange(*RANGE):
+	# 	unique_factors.update(factorize(i))
+	# Method 2, set from list comprehension (8.7 s):
+	unique_factors = set([factor for i in xrange(*RANGE) for factor in factorize(i)])
+	# Method 3, set from map (9.33 s):
+	# unique_factors = set([factor for factors in map(factorize, xrange(*RANGE)) for factor in factors])
+	return len(unique_factors)
 
 def function2():
 	"""Parallelized using multiprocessing"""
-	pass
+	pool = multiprocessing.Pool()
+	result = set([factor for factors in pool.map(factorize,xrange(*RANGE)) for factor in factors])
+	return len(result)
 
 def function3():
 	"""Parallelized using iPython"""
 	pass
 
 def main(arg):
-	modes = {"s": function1, "i": function2, "i": function3}
+	modes = {"s": function1, "m": function2, "i": function3}
 	if not arg in modes:
 		raise NameError
 	else:
+		t0 = time.time()
 		print(modes[arg]())
+		print("Timer: {0} s".format(time.time()-t0))
 
 if __name__ == "__main__":
-	p = argparse.ArgumentParser("...")
+	p = argparse.ArgumentParser("Factorize integers from {0} to {1}".format(*RANGE))
 	p.add_argument("mode", help="The mode to run in: s: sequential, " +
 		"m: parallel with multiprocessing, i: parallel with iPython",
 		choices=("s","m","i"))

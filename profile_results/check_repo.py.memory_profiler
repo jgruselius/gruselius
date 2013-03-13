@@ -1,0 +1,21 @@
+PASS
+Filename: scripts/check_repo.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     6                             @profile
+     7     8.391 MB     0.000 MB   def main(args):
+     8     8.391 MB     0.000 MB   	if len(args) < 2:
+     9                             		help()
+    10     8.391 MB     0.000 MB   	elif not os.path.exists(args[-1]):
+    11                             		print("The path '{0}' does not exist".format(args[-1]))
+    12                             	else:
+    13     8.391 MB     0.000 MB   		path = os.path.abspath(args[-1])
+    14     8.391 MB     0.000 MB   		with TemporarilyChangeDir(path):
+    15     8.395 MB     0.004 MB   			cr = CourseRepo(os.path.basename(path))
+    16     8.395 MB     0.000 MB   			if cr.check():
+    17     8.395 MB     0.000 MB   				print("PASS")
+    18                             			else:
+    19                             				print("FAIL")
+
+

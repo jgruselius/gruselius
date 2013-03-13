@@ -1,0 +1,13 @@
+Fraction of outages with reason REPAIR: 0.714285714286
+Filename: scripts/getting_data.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     5                             @profile
+     6     8.543 MB     0.000 MB   def main(args):
+     7     8.543 MB     0.000 MB   	xmlUrl = "http://www.grandcentral.org/developers/data/nyct/nyct_ene.xml"
+     8     8.543 MB     0.000 MB   	reason = "REPAIR"
+     9    10.590 MB     2.047 MB   	fraction = getFractionOfOutagesBy(xmlUrl, reason)
+    10    10.605 MB     0.016 MB   	print("Fraction of outages with reason {0}: {1}".format(reason, fraction))
+
+

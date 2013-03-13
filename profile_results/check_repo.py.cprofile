@@ -1,0 +1,40 @@
+PASS
+         55 function calls in 0.001 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 __init__.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 check_repo.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 check_repo.py:7(main)
+        8    0.000    0.000    0.000    0.000 genericpath.py:15(exists)
+        1    0.000    0.000    0.000    0.000 posixpath.py:110(basename)
+        1    0.000    0.000    0.000    0.000 posixpath.py:312(normpath)
+        1    0.000    0.000    0.000    0.000 posixpath.py:341(abspath)
+        1    0.000    0.000    0.000    0.000 posixpath.py:51(isabs)
+        1    0.000    0.000    0.000    0.000 posixpath.py:60(join)
+        1    0.000    0.000    0.000    0.000 session3.py:2(<module>)
+        1    0.000    0.000    0.000    0.000 session3.py:23(check)
+        1    0.000    0.000    0.000    0.000 session3.py:27(TemporarilyChangeDir)
+        1    0.000    0.000    0.000    0.000 session3.py:28(__init__)
+        1    0.000    0.000    0.000    0.000 session3.py:32(__enter__)
+        1    0.000    0.000    0.000    0.000 session3.py:35(__exit__)
+        1    0.000    0.000    0.000    0.000 session3.py:4(CourseRepo)
+        1    0.000    0.000    0.000    0.000 session3.py:5(__init__)
+        1    0.000    0.000    0.000    0.000 session3.py:9(updateRequired)
+        1    0.000    0.000    0.000    0.000 {all}
+        2    0.000    0.000    0.000    0.000 {isinstance}
+        1    0.000    0.000    0.000    0.000 {len}
+        4    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {posix.chdir}
+        2    0.000    0.000    0.000    0.000 {posix.getcwd}
+        8    0.000    0.000    0.000    0.000 {posix.stat}
+
+

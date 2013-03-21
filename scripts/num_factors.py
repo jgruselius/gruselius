@@ -27,6 +27,11 @@ def factorize(n):
 		else:
 			p += 1
 
+def unique_factors(iterable):
+	# Unique factors: [uf for i in iterable for uf in set(factorize(i))]
+	# Unique factor count:
+	return [len(set(factorize(i))) for i in iterable]
+
 def function1():
 	t0 = time.clock()
 	"""Sequential non-parallel function"""

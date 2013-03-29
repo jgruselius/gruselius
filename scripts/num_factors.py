@@ -5,7 +5,7 @@ import time
 import multiprocessing
 from IPython.parallel import Client
 
-RANGE = (2,50000)
+RANGE = (2,500000)
 
 """
 Build a collection of all unique factors:
@@ -64,7 +64,11 @@ def function2():
 def function3():
 	"""Parallelized using iPython"""
 	dview = Client()[:]
-	return dview.map(number_of_unique_factors, xrange(*RANGE))
+	#ifunc = dview.parallel(block=True)(lambda iter: [len(set(factorize(i))) for i in iter])
+	@dview.parallel(block=True)
+	def ifunc(it):
+		return [len(set(factorize(i))) for i in it]
+	return ifunc(xrange(*RANGE))
 
 def main(arg):
 	modes = {"s": function1, "m": function2, "i": function3}

@@ -1,0 +1,27 @@
+I am confused about the following: "pyecm.py". Here's the help page:
+
+Usage: pyecm [OPTION] [expression to factor]
+Factor numbers using the Elliptic Curve Method.
+
+   --portion=num     Does only part of the work for factoring, corresponding to
+what fraction of the total work the machine is doing. Useful for working in
+parallel. For example, if there are three machines: 1GHz, 1GHz, and 2GHz, print
+should be set to 0.25 for the 1GHz machines and 0.5 for the 2GHz machine.
+Implies -r and -v. -r is needed to avoid duplicating work and -v is needed to
+report results.
+   --ov=num          Sets the value of the internal parameter ov, which
+determines the trade-off between memory and time usage. Do not touch if you do
+not know what you are doing. Please read all the documentation and understand
+the full implications of the parameter before using this switch.
+   -n, --noverbose   Terse. On by default. Needed to cancel the -v from the
+--portion or --random switches. If both -n and -v are specified, the one
+specified last takes precedence.
+   -r, --random      Chooses random values for sigma, an internal parameter in
+the calculation. Implies -v; if you're doing something random, you want to know
+what's happening.
+   -v, --verbose     Explains what is being done with intermediate calculations
+and results.
+
+With no integers to factor given via command-line, read standard input.
+
+Please report bugs to Eric Larson <elarson3@uoregon.edu>.
